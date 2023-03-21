@@ -1,0 +1,93 @@
+.advantage {
+    border: 1px solid #ebebeb;
+    border-left: 5px solid $color-blue;
+    padding: 40px;
+    min-height: 220px;
+
+    &__logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    &__name {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: $color-blue;
+
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        min-height: 120px;
+        font-family: 'PT Mono', 'Rockwell', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: $color-black;
+    }
+
+    &__logo {
+        fill: $color-blue;
+    }
+
+    &:hover {
+        background-color: $color-blue;
+
+        & .advantage__name, 
+        .advantage__description {
+            color: $color-white;
+        }
+
+        & .advantage__logo {
+            fill: $color-white;
+        }
+    }
+}
+
+@include vp-1023 {
+    .advantage {
+        
+        padding: 40px 30px 30px 40px;
+
+        &__name {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        &__description {
+            min-height: 165px;
+        }
+    }
+
+}
+
+@include vp-769 {
+    .advantage {
+
+        padding: 30px 30px 35px 25px;
+
+        &__logo {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__name {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        &__description {    
+            min-height: 190px;        
+            font-size: 14px;
+            line-height: 135%;
+        }
+    }
+}

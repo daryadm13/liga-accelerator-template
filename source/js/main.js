@@ -1,5 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import './modules/more';
+import './modules/scroll';
+import './modules/form-checker';
+import './modules/footer_list';
 
 // ---------------------------------
 

@@ -1,0 +1,47 @@
+.callform {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+
+    &__input {
+        min-width: 100px;
+        background: rgba(4, 20, 39, 0.15);
+        border: none;
+        border-radius: 3px;
+        font-family: 'PT Mono', 'Rockwell', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #ffffff;
+        padding: 15px;
+        cursor: pointer;
+        
+        &::-moz-placeholder { 
+            color: #ffffff; 
+        }
+        
+        &::-webkit-input-placeholder { 
+            color: #ffffff; 
+        }
+
+        &--question {
+            min-height: 155px;
+            margin-bottom: 15px;
+            margin: 0;
+        }
+    }
+
+    &__button {
+        padding: 15px 25px;
+        width: 100%;
+        margin-right: 10px;
+        background-color: $color-black;
+    }
+
+    &__checkbox {
+        margin: 0;
+    }
+}

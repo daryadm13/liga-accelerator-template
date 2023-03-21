@@ -14,12 +14,33 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/visually-hidden";
 
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
+@import "blocks/wrapper";
+@import "blocks/button";
 @import "blocks/modal";
+@import "blocks/header";
+@import "blocks/contact";
+@import "blocks/main-block";
+@import "blocks/advantages";
+@import "blocks/advantage";
+@import "blocks/about";
+@import "blocks/product";
+@import "blocks/products";
+@import "blocks/form-block";
+@import "blocks/form";
+@import "blocks/modal-form";
+@import "blocks/checkbox";
+@import "blocks/callform";
+@import "blocks/footer";
+@import "blocks/sections";
+@import "blocks/contacts";
+@import "blocks/links";
+@import "blocks/social";
 
 // ---------------------------------
 
