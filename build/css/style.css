@@ -904,6 +904,7 @@ button,
   padding-top: 305px;
   padding-bottom: 280px;
   height: 880px;
+  background-color: #026593;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url(../img/mainblock-desktop.jpg);
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url(../img/mainblock-desktop.jpg);
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url(../img/mainblock-desktop.jpg);
@@ -1086,6 +1087,7 @@ button,
   max-width: 350px;
   height: 650px;
   position: relative;
+  background-color: #026593;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url(../img/mainblock-desktop.jpg);
   background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/mainblock-desktop.jpg);
   background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/mainblock-desktop.jpg);
@@ -1331,8 +1333,8 @@ button,
   display: block;
 }
 
-.checkbox-filter__input:disabled + .checkbox-filter__mark,
-.checkbox-filter__input:disabled ~ .checkbox-filter__name {
+.checkbox__input:disabled + .checkbox__mark,
+.checkbox__input:disabled ~ .checkbox__name {
   opacity: 0.3;
 }
 

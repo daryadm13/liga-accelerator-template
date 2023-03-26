@@ -38,7 +38,7 @@
 }
 
 
-.checkbox-filter__input:disabled + .checkbox-filter__mark,
-.checkbox-filter__input:disabled ~ .checkbox-filter__name {
+.checkbox__input:disabled + .checkbox__mark,
+.checkbox__input:disabled ~ .checkbox__name {
   opacity: 0.3;
 }

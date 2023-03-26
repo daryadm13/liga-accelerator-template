@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание проекта">
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/PTMono-Regular.woff" as="font">
+    <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
   </head>
   <body>
     <div class="body">
@@ -111,7 +117,10 @@
         <section class="about">
           <div class="wrapper about__wrapper">
           <a href="#" name="about"></a>
-          <img src="img/2022.jpg" class="about__pic" alt="" width="150" height="320">
+          <picture>
+            <source type="image/webp" srcset="img/2022.webp">
+            <img class="about__pic" src="img/2022.jpg"  srcset="img/promo-pic-mobile@2x.png 2x" alt="2022" width="150" height="320">
+          </picture>
           <h2 class="about__header">
             О компании
           </h2>
@@ -153,7 +162,7 @@
                     Производство печатных плат
                   </h3>
                   <a href="#" class="button product__button">
-                    <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
+                    <svg class="product__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
                       <use xlink:href="img/sprite/sprite.svg#arrow"></use>
                     </svg>
                   </a>
@@ -165,7 +174,7 @@
                     Монтаж печатных плат
                   </h3>
                   <a href="#" class="button product__button">
-                    <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
+                    <svg class="product__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
                       <use xlink:href="img/sprite/sprite.svg#arrow"></use>
                     </svg>
                   </a>
@@ -177,7 +186,7 @@
                     Комплектующие для светотехники
                   </h3>
                   <a href="#" class="button product__button">
-                    <svg class="social__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
+                    <svg class="product__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
                       <use xlink:href="img/sprite/sprite.svg#arrow"></use>
                     </svg>
                   </a>
