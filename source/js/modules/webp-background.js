@@ -17,7 +17,11 @@ window.onload = function () {
     }
     const mainBlock = document.querySelector('.main-block');
     mainBlock.style.backgroundImage = "linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("+ mainBlock.getAttribute('data-bg-webp') +")";
-    const formBlock = document.querySelector('.form-block');
-    formBlock.style.backgroundImage = "url(" + formBlock.getAttribute('data-bg-webp') + ")";
-  }
+
+    const mediaQuery = window.matchMedia('(max-width: 1023px)');
+    if (!mediaQuery.matches) {
+      const formBlock = document.querySelector('.form-block');
+      formBlock.style.backgroundImage = "url(" + formBlock.getAttribute('data-bg-webp') + ")";
+    };
+  };
 };
