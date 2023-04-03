@@ -40,7 +40,7 @@
                 <a href="tel:+74950005252" class="contact__text"> +7 (495) 000 52 52 </a>
               </li>
             </ul>
-            
+
             <p class="button header__button">
               <a class="button__text button__text--header" data-open-modal="success">
                 Заказать звонок
@@ -57,7 +57,7 @@
             <p class="main-block__description">
               производство и монтаж, поставка комплектующих, блоков и модулей
             </p>
-            <a href="#form-block" class="button button--main-block main-block__button" where=".form-block">
+            <a href="#form-block" class="button button--main-block main-block__button">
               <p class="button__text">Получить бесплатную консультацию</p>
               <p class="button__text button__text--mobile">Бесплатная консультация</p>
             </a>
@@ -73,7 +73,7 @@
                 <use xlink:href="img/sprite/sprite.svg#stopwatch"></use>
               </svg>
               <h3 class="advantage__name">
-                Оперативные сроки 
+                Оперативные сроки
               </h3>
               <p class="advantage__description">
                 Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
@@ -126,7 +126,7 @@
           </h2>
           <div class="about__text about__text--main">
             <p class="about__paragraph">
-            Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. 
+            Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
             <p class="about__paragraph">
             Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
@@ -140,10 +140,10 @@
             Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
           </p>
           </div>
-          <button class="button about__button">
+          <a class="button about__button">
             <p class="button__text about__button-text button__text--shown">Подробнее</p>
             <p class="button__text about__button-text button__text--hidden visually-hidden">Свернуть</p>
-          </button>
+          </a>
         </div>
         </section>
         <section class="products">
@@ -161,11 +161,11 @@
                   <h3 class="product__name">
                     Производство печатных плат
                   </h3>
-                  <a href="#" class="button product__button">
+                  <div class="button product__button">
                     <svg class="product__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
                       <use xlink:href="img/sprite/sprite.svg#arrow"></use>
                     </svg>
-                  </a>
+                  </div>
                 </a>
               </li>
               <li class="products__item product">
@@ -173,11 +173,11 @@
                   <h3 class="product__name">
                     Монтаж печатных плат
                   </h3>
-                  <a href="#" class="button product__button">
+                  <div class="button product__button">
                     <svg class="product__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
                       <use xlink:href="img/sprite/sprite.svg#arrow"></use>
                     </svg>
-                  </a>
+                  </div>
                 </a>
               </li>
               <li class="products__item product">
@@ -185,17 +185,17 @@
                   <h3 class="product__name">
                     Комплектующие для светотехники
                   </h3>
-                  <a href="#" class="button product__button">
+                  <div class="button product__button">
                     <svg class="product__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4" height="8">
                       <use xlink:href="img/sprite/sprite.svg#arrow"></use>
                     </svg>
-                  </a>
+                  </div>
                 </a>
               </li>
             </ul>
           </div>
         </section>
-        <section class="form-block">
+        <section class="form-block" id="form-block">
           <div class="wrapper form-block__wrapper">
             <a href="#" name="form-block"></a>
             <h2 class="form-block__header">
@@ -204,7 +204,7 @@
             <p class="form-block__description">
               Мы проконсультируем Вас бесплатно
             </p>
-              <form action="" class="form-block__form form" method="post">
+              <form action="#" class="form-block__form form" method="post">
                 <input class="form__input" type="text" name="name" placeholder="Имя" required>
                 <input class="form__input form__input--phone" type="tel" name="phone" placeholder="Телефон" value="" required>
                 <textarea class="form__input form__input--question" placeholder="Ваш вопрос"></textarea>
@@ -218,8 +218,8 @@
                   </span>
                   <span class="checkbox__name">Я согласен на обработку персональных данных</span>
                 </label>
-              </form>   
-            </div>     
+              </form>
+            </div>
         </section>
       </main>
       <footer class="footer">
@@ -350,7 +350,7 @@
             <p class="modal-form__description">
               Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
             </p>
-              <form action="" class="modal-form__form callform" method="post">
+              <form action="#" class="modal-form__form callform" method="post">
                 <input class="callform__input" type="text" name="name" placeholder="Имя" required>
                 <input class="callform__input  form__input--phone" type="tel" name="phone" placeholder="Телефон" value="" required>
                 <textarea class="callform__input callform__input--question" placeholder="Ваш вопрос"></textarea>
@@ -366,9 +366,9 @@
                     Я согласен на обработку  персональных данных
                   </p>
                  </label>
-              </form>   
-            </div>     
-          
+              </form>
+            </div>
+
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg class="modal__close-btn--pic" width="20" height="20">
               <use xlink:href="img/sprite/sprite.svg#close"></use>
