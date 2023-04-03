@@ -1,18 +1,19 @@
 .wrapper {
-    margin: 0 auto;
-    padding: 0 25px;
-    width: 100%;
-    height: auto;
+  margin: 0 auto;
+  padding: 0 25px;
+  width: 100%;
+  height: auto;
 }
+
 @include vp-1023 {
-    .wrapper{
-        padding: 0 50px;
-    }
+  .wrapper {
+    padding: 0 50px;
+  }
 }
 
 @include vp-769 {
-    .wrapper {    
-        padding: 0 25px;
-    }
+  .wrapper {
+    padding: 0 25px;
+  }
 }
 

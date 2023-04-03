@@ -1,76 +1,75 @@
 .header {
-    background: linear-gradient(180deg, $color-black 84.9%, rgba(4, 24, 39, 0) 100%);
-    position: absolute;
-    width: 100%;
-    z-index: 2;
+  background: linear-gradient(180deg, $color-black 84.9%, rgba(4, 24, 39, 0) 100%);
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 
-    &__wrapper {
-        min-height: 120px;
-        max-width: 1270px;
-        padding: 0 85px 0 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  &__wrapper {
+    min-height: 120px;
+    max-width: 1270px;
+    padding: 0 85px 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    
-    &__contacts {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        list-style-type: none;
-        gap: 30px;
-    }
 
-    &__button {
-        background: none;
-        border: 1px solid $color-white;
-        color: #ffffff;
-    }
+  &__contacts {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+  }
 
-    &__logo--mobile {
-        display: none;
-    }
+  &__button {
+    background: none;
+    border: 1px solid $color-white;
+    color: #ffffff;
+  }
+
+  &__logo--mobile {
+    display: none;
+  }
 }
 
 @include vp-1023 {
-    .header {
-        &__wrapper {
-            min-height: 100px;
-            padding-left: 50px;
-            padding-right: 80px;
-        }
-
-        &__button {
-            display: none;
-        }
-
-        &__contacts {
-            margin-bottom: 20px;
-            gap: 40px;
-        }
+  .header {
+    &__wrapper {
+      min-height: 100px;
+      padding-left: 50px;
+      padding-right: 80px;
     }
+
+    &__button {
+      display: none;
+    }
+
+    &__contacts {
+      margin-bottom: 20px;
+      gap: 40px;
+    }
+  }
 }
 
 @include vp-769 {
-    .header {
-
-        &__wrapper {        
-            min-height: 70px;
-        }
-
-        &__contacts {
-            gap: 40px;
-            padding-right: 20px;
-        }
-
-        &__logo {
-            display: none;
-
-            &--mobile {
-                display: block;
-            }
-        }
+  .header {
+    &__wrapper {
+      min-height: 70px;
     }
+
+    &__contacts {
+      gap: 40px;
+      padding-right: 20px;
+    }
+
+    &__logo {
+      display: none;
+
+      &--mobile {
+        display: block;
+      }
+    }
+  }
 }

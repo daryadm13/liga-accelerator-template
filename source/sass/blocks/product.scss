@@ -1,101 +1,101 @@
 .product {
-    max-width: 350px;
-    height: 650px;
-    position: relative;
-    background-color: #026593;
-    background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/mainblock-desktop.jpg);
-    background-size: 1493px 706px;
+  max-width: 350px;
+  height: 650px;
+  position: relative;
+  background-color: #026593;
+  background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/mainblock-desktop.jpg");
+  background-size: 1493px 706px;
+
+  &__wrapper {
+    display: block;
+    width: inherit;
+    height: inherit;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 80px;
+    cursor: pointer;
+  }
+
+  &:nth-child(1) {
+    background-position-x: -188px;
+    background-position-y: -56px;
+  }
+
+  &:nth-child(2) {
+    background-position-x: calc(-188px - 100%);
+    background-position-y: -56px;
+  }
+
+  &:nth-child(3) {
+    background-position-x: calc(-188px - 200%);
+    background-position-y: -56px;
+  }
+
+  &__name {
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@include vp-1023 {
+  .product {
+    max-width: unset;
+    background-size: 1493px 750px;
+    width: 100%;
+    height: 250px;
 
     &__wrapper {
-        display: block;
-        width: inherit;
-        height: inherit;
-        padding-top: 50px;
-        padding-left: 40px;
-        padding-right: 80px;
-        cursor: pointer;
-    }
-
-    &:nth-child(1) {
-        background-position-x: -188px;
-        background-position-y: -56px;
-    }
-
-    &:nth-child(2) {
-        background-position-x: calc(-188px - 100%);
-        background-position-y: -56px;
-    }
-
-    &:nth-child(3) {
-        background-position-x: calc(-188px - 200%);
-        background-position-y: -56px;
+      padding-top: 40px;
+      padding-left: 45px;
     }
 
     &__name {
-        margin: 0;
-        font-family: 'Roboto Condensed';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        color: #ffffff;
+      width: 230px;
     }
 
-    &__button {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 60px;
-        height: 60px; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &:nth-child(1) {
+      background-position-x: -100px;
+      background-position-y: 0;
     }
-}
 
-@include vp-1023  {
-    .product {
-        max-width: unset;
-        background-size: 1493px 750px;
-        width: 100%;
-        height: 250px;
-
-        &__wrapper {            
-            padding-top: 40px;
-            padding-left: 45px;
-        }
-
-        &__name {
-            width: 230px;
-        }
-
-        &:nth-child(1) {
-            background-position-x: -100px;
-            background-position-y: 0px;
-        }
-    
-        &:nth-child(2) {
-            background-position-x: -100px;
-            background-position-y: -250px;
-        }
-    
-        &:nth-child(3) {
-            background-position-x: -100px;
-            background-position-y: -500px;
-        }
+    &:nth-child(2) {
+      background-position-x: -100px;
+      background-position-y: -250px;
     }
+
+    &:nth-child(3) {
+      background-position-x: -100px;
+      background-position-y: -500px;
+    }
+  }
 }
 
 @include vp-769 {
-    .product {
-        &__wrapper {
-            padding: 30px;
-            padding-bottom: 50px;
-        }
-
-        &__button {
-            width: 40px;
-            height: 40px;
-        }
+  .product {
+    &__wrapper {
+      padding: 30px;
+      padding-bottom: 50px;
     }
+
+    &__button {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }

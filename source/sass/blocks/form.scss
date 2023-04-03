@@ -1,58 +1,58 @@
 .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
 
-    &__input {
-        min-width: 100px;
-        background: rgba(4, 20, 39, 0.15);
-        border: none;
-        border-radius: 3px;
-        font-family: 'PT Mono', 'Rockwell', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
+  &__input {
+    min-width: 100px;
+    background: rgba(4, 20, 39, 0.15);
+    border: none;
+    border-radius: 3px;
+    font-family: "PT Mono", "Rockwell", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 
-        color: #ffffff;
-        padding: 15px;
-        cursor: pointer;
-        
-        &::-moz-placeholder { 
-            color: #ffffff; 
-        }
-        
-        &::-webkit-input-placeholder { 
-            color: #ffffff; 
-        }
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
 
-        &--question {
-            grid-column: 1 / -1;
-            min-height: 155px;
-            margin-bottom: 15px;
-        }
+    &::-moz-placeholder {
+      color: #ffffff;
     }
 
-    &__button {
-        margin-right: 10px;
-        background-color: $color-black;
+    &::-webkit-input-placeholder {
+      color: #ffffff;
     }
+
+    &--question {
+      grid-column: 1 / -1;
+      min-height: 155px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__button {
+    margin-right: 10px;
+    background-color: $color-black;
+  }
 }
 
 @include vp-1023 {
-    .form {
-        &__button {
-            padding: 15px 25px;
-            width: 265px;
-        }
+  .form {
+    &__button {
+      padding: 15px 25px;
+      width: 265px;
     }
+  }
 }
 
 @include vp-769 {
-    .form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

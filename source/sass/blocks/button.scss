@@ -1,77 +1,76 @@
 .button {
+  display: block;
+  padding: 0;
+
+  color: $color-white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $color-blue;
+  border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &__text {
     display: block;
-    padding: 0;
-  
-    color: $color-white;
-    font-family: 'Roboto Condensed', 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    padding: 15px 25px;
+    margin: 0;
+  }
+
+  &__text--header {
+    color: #ffffff;
+  }
+
+  &__text--mobile {
+    display: none;
+  }
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+@include vp-1023 {
+  .button {
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-  
-    background-color: $color-blue;
-    border: none;
-    border-radius: 3px;
-    
-    cursor: pointer;
-  
-    transition: opacity $trans-default;
-  
+  }
+}
+
+@include vp-769 {
+  .button {
+    min-height: 15px;
+
     &__text {
-      display: block;
-      padding: 15px 25px;
-      margin: 0;
+      font-size: 14px;
+      line-height: 16px;
     }
 
-    &__text--header {
-      color: #ffffff;
-    }
-
-    &__text--mobile {
+    &--main-block .button__text {
       display: none;
-    }
 
-    &--red {
-      background-color: $color-torch-red;
-    }
-  
-    &:disabled {
-      opacity: 0.5;
-  
-      pointer-events: none;
-    }
-  
-    @include hover-focus {
-      opacity: 0.8;
-    }
-  }
-
-  @include vp-1023 {
-    .button {
-      font-size: 16px;
-      line-height: 19px;
-    }
-  }
-
-  @include vp-769 {
-    .button {
-      min-height: 15px;
-
-      &__text {
-        font-size: 14px;
-        line-height: 16px;
-      }
-
-      &--main-block .button__text{
-        display: none;
-        
-        &--mobile {
-          display: block;
-          padding: 0;
-        }
+      &--mobile {
+        display: block;
+        padding: 0;
       }
     }
   }
-  
+}

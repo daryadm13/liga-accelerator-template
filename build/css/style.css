@@ -890,7 +890,6 @@ button,
 .contact__text {
   margin-left: 15px;
   font-family: "PT Mono", "Rockwell", serif;
-  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -905,9 +904,9 @@ button,
   padding-bottom: 280px;
   height: 880px;
   background-color: #026593;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url(../img/mainblock-desktop.jpg);
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url(../img/mainblock-desktop.jpg);
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url(../img/mainblock-desktop.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/mainblock-desktop.jpg");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/mainblock-desktop.jpg");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/mainblock-desktop.jpg");
   background-size: cover;
   color: #f2f5f7;
   display: -webkit-box;
@@ -989,10 +988,11 @@ button,
 .advantage__logo {
   width: 35px;
   height: 35px;
+  fill: #00b2ff;
 }
 
 .advantage__name {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -1009,10 +1009,6 @@ button,
   font-size: 16px;
   line-height: 135%;
   color: #041827;
-}
-
-.advantage__logo {
-  fill: #00b2ff;
 }
 
 .advantage:hover {
@@ -1045,7 +1041,7 @@ button,
 }
 
 .about__header {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1088,9 +1084,9 @@ button,
   height: 650px;
   position: relative;
   background-color: #026593;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url(../img/mainblock-desktop.jpg);
-  background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/mainblock-desktop.jpg);
-  background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url(../img/mainblock-desktop.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/mainblock-desktop.jpg");
+  background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/mainblock-desktop.jpg");
+  background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/mainblock-desktop.jpg");
   background-size: 1493px 706px;
 }
 
@@ -1121,7 +1117,7 @@ button,
 
 .product__name {
   margin: 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1162,7 +1158,7 @@ button,
 .products__header {
   margin: 0;
   margin-bottom: 50px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1185,7 +1181,7 @@ button,
 
 .form-block {
   background-color: #00b2ff;
-  background-image: url(../img/form-background.jpg);
+  background-image: url("../img/form-background.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -1207,7 +1203,7 @@ button,
 
 .form-block__header {
   margin: 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1375,7 +1371,6 @@ button,
 
 .callform__input--question {
   min-height: 155px;
-  margin-bottom: 15px;
   margin: 0;
 }
 
@@ -1507,6 +1502,10 @@ button,
   margin: 0;
   margin-top: 20px;
   margin-left: 10px;
+}
+
+.social__logo:hover {
+  opacity: 0.8;
 }
 
 /* @mixin hover-focus {
@@ -1685,7 +1684,7 @@ button,
 
   .product:nth-child(1) {
     background-position-x: -100px;
-    background-position-y: 0px;
+    background-position-y: 0;
   }
 
   .product:nth-child(2) {
@@ -2005,7 +2004,7 @@ button,
     top: 28px;
     width: 15px;
     height: 0.94px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     cursor: pointer;
   }
 
@@ -2034,7 +2033,7 @@ button,
     top: 28px;
     width: 15px;
     height: 0.94px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     cursor: pointer;
   }
 

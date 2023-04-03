@@ -1,66 +1,65 @@
 .form-block {
-    background-color: $color-blue;
-    background-image: url(../img/form-background.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-color: $color-blue;
+  background-image: url("../img/form-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  min-height: 630px;
+  display: flex;
+  padding-left: calc(50vw + 20px);
+  padding-top: calc(8.5vw);
+  padding-bottom: calc(13vw);
+  padding-right: 25px;
+
+  &__wrapper {
+    max-width: min(580px, calc(50vw - 45px));
+    margin: 0;
+    padding: 0;
+  }
+
+  &__header {
+    margin: 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+
     color: #ffffff;
-    min-height: 630px;
-    display: flex;
-    padding-left: calc(50vw + 20px);
-    padding-top: calc(8.5vw);
-    padding-bottom: calc(13vw);
-    padding-right: 25px;
+  }
 
-    &__wrapper {
-        max-width: min(580px, calc(50vw - 45px));
-        margin: 0;
-        padding: 0;
-    }
+  &__description {
+    font-family: "PT Mono", "Rockwell", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 
-    &__header {
-        margin: 0;
-        font-family: 'Roboto Condensed';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 45px;
-
-        color: #ffffff;
-
-    }
-
-    &__description {
-        font-family: 'PT Mono', 'Rockwell', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        
-        color: #ffffff;
-        margin-top: 15px;
-        margin-bottom: 35px;
-    }
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
 }
 
 @include vp-1023 {
-    .form-block {
-        background-image: none;
-        padding: 0;
-        padding-top: 50px;
-        padding-bottom: 125px;
-        min-height: 0;
-        height: max-content;
+  .form-block {
+    background-image: none;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    min-height: 0;
+    height: max-content;
 
-        &__wrapper {
-            max-width: none;
-            width: 770px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        &__description {
-            margin-top: 10px;
-            margin-bottom: 25px;
-        }
+    &__wrapper {
+      max-width: none;
+      width: 770px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    &__description {
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+  }
 }

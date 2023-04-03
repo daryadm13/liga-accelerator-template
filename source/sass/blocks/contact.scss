@@ -1,27 +1,27 @@
-.contact {   
-    display: flex; 
-    min-width: 225px;
-    align-items: center;
-    justify-content: flex-start;
+.contact {
+  display: flex;
+  min-width: 225px;
+  align-items: center;
+  justify-content: flex-start;
 
-    &__text {
-        margin-left: 15px;
-        font-family: 'PT Mono', 'Rockwell', serif;font-family: 'PT Mono';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 18px;
-        
-        color: $color-white;
-    }
+  &__text {
+    margin-left: 15px;
+    font-family: "PT Mono", "Rockwell", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: $color-white;
+  }
 }
 
 @include vp-1023 {
-    .contact {
-        min-width: 0;
+  .contact {
+    min-width: 0;
 
-        &__text {
-            display: none;
-        }
+    &__text {
+      display: none;
     }
+  }
 }

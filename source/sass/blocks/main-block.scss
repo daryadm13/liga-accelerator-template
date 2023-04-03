@@ -1,115 +1,115 @@
 .main-block {
-    position: relative;
-    padding: 0;
-    padding-top: 305px; 
-    padding-bottom: 280px;
-    height: 880px;
-    background-color: #026593;
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url(../img/mainblock-desktop.jpg);
-    background-size: cover;
-    color: $color-white;
+  position: relative;
+  padding: 0;
+  padding-top: 305px;
+  padding-bottom: 280px;
+  height: 880px;
+  background-color: #026593;
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/mainblock-desktop.jpg");
+  background-size: cover;
+  color: $color-white;
+  display: flex;
+  z-index: 1;
+
+  &__wrapper {
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    z-index: 1;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
 
-    &__wrapper {
-        width: 1020px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        align-items: flex-start;
-    }
 
-    
-    &__header {
-        font-family: 'Roboto Condensed', 'Arial', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 80px;
-        letter-spacing: 0.07em;
-        line-height: 94px;
-        text-transform: uppercase;
+  &__header {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 0.07em;
+    line-height: 94px;
+    text-transform: uppercase;
 
-        margin: 0;
-    }
+    margin: 0;
+  }
 
-    &__description {
-        width: 685px;
-        font-family: 'PT Mono', 'Rockwell', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 155%;
-    }
+  &__description {
+    width: 685px;
+    font-family: "PT Mono", "Rockwell", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 155%;
+  }
 
-    &__button {
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 0.05em;
-        cursor: pointer;
-    }
+  &__button {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  }
 }
 
 
 @include vp-1023 {
-    .main-block {
-        background-position-x: -123px;
-        padding-top: 180px;
-        padding-bottom: 205px;
-        height: auto;
+  .main-block {
+    background-position-x: -123px;
+    padding-top: 180px;
+    padding-bottom: 205px;
+    height: auto;
 
-        &__wrapper {
-            min-height: none;
-            width: auto;
-            gap: 0;
-        }
-
-        &__header {
-            font-size: 64px;
-            line-height: 75px;
-            letter-spacing: 0.07em;
-        }
-
-        &__description {
-            width: auto;
-            margin-bottom: 58px;
-        }
-
-        &__button {
-            min-height: 55px;
-            min-width: 410px;
-            margin-left: 45px;
-        }
+    &__wrapper {
+      min-height: none;
+      width: auto;
+      gap: 0;
     }
+
+    &__header {
+      font-size: 64px;
+      line-height: 75px;
+      letter-spacing: 0.07em;
+    }
+
+    &__description {
+      width: auto;
+      margin-bottom: 58px;
+    }
+
+    &__button {
+      min-height: 55px;
+      min-width: 410px;
+      margin-left: 45px;
+    }
+  }
 }
 
 @include vp-769 {
-    .main-block {
-        padding-top: 150px;
-        padding-bottom: 190px;
+  .main-block {
+    padding-top: 150px;
+    padding-bottom: 190px;
 
-        &__wrapper {
-            gap: 10px;
-        }
-
-        &__header {
-            font-size: 36px;
-            line-height: 42px;
-            letter-spacing: 0.07em;
-        }
-
-        &__description {            
-            font-size: 14px;
-            line-height: 155%;
-            margin-bottom: 30px;
-        }
-
-        &__button {            
-            width: 100%;
-            min-width: 260px;
-            padding: 10px 30px;
-            margin: 0;
-        }
+    &__wrapper {
+      gap: 10px;
     }
+
+    &__header {
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: 0.07em;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 155%;
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      width: 100%;
+      min-width: 260px;
+      padding: 10px 30px;
+      margin: 0;
+    }
+  }
 }

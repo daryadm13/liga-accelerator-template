@@ -1,58 +1,57 @@
 .contacts {
-    max-width: 345px;
+  max-width: 345px;
 
-    &__list {
-        margin: 0;
-    }
+  &__list {
+    margin: 0;
+  }
 
-    &__address,
-    &__number {
-        font-family: 'PT Mono', 'Rockwell', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 135%;
-        color: rgba(255, 255, 255, 0.7);
-    }
+  &__address,
+  &__number {
+    font-family: "PT Mono", "Rockwell", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: rgba(255, 255, 255, 0.7);
+  }
 
-    &__item {
-        margin-top: 10px;
-    }
-
+  &__item {
+    margin-top: 10px;
+  }
 }
 
 @include vp-1023 {
-    .contacts {
-        min-width: 0;
-        margin-left: auto;
-    }
+  .contacts {
+    min-width: 0;
+    margin-left: auto;
+  }
 }
 
 @include vp-769 {
-    .contacts {
-        padding: 20px 25px;
-        border-top: 1px solid rgba(248, 253, 255, 0.7);
-        border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-        position: relative;
-        max-width: unset;
+  .contacts {
+    padding: 20px 25px;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    position: relative;
+    max-width: unset;
 
-        &__address {
-            margin-top: 15px;
-        }
-        
-        &__header--plus,
-        &__header--minus {
-            position: absolute;
-            right: 26px;
-            top: 28px;
-            width: 15px;
-            height: 0.94px;
-            background-color: #C4C4C4;
-            cursor: pointer;
-        }
-
-        &__header--plus {
-            transform: rotate(90deg);
-        }
+    &__address {
+      margin-top: 15px;
     }
+
+    &__header--plus,
+    &__header--minus {
+      position: absolute;
+      right: 26px;
+      top: 28px;
+      width: 15px;
+      height: 0.94px;
+      background-color: #c4c4c4;
+      cursor: pointer;
+    }
+
+    &__header--plus {
+      transform: rotate(90deg);
+    }
+  }
 }
