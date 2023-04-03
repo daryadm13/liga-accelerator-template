@@ -1,4 +1,4 @@
-const phone = document.querySelector('.form__input--phone');
+const phone = document.querySelector('.phone');
 
 function createNumber(s) {
   let cur = '+7 ';
@@ -63,7 +63,7 @@ function mask(event) {
   }
 }
 
-let inputs = document.querySelectorAll('.form__input--phone');
+let inputs = document.querySelectorAll('.phone');
 for (const input of inputs) {
   input.addEventListener('keydown', mask2, false);
   input.addEventListener('keyup', mask, false);

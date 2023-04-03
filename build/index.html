@@ -49,7 +49,7 @@
           </div>
       </header>
       <main>
-        <section class="main-block">
+        <section class="main-block" data-bg-webp="../img/mainblock-desktop.webp">
           <div class="wrapper main-block__wrapper">
             <h1 class="main-block__header">
               Печатные платы
@@ -58,8 +58,7 @@
               производство и монтаж, поставка комплектующих, блоков и модулей
             </p>
             <a href="#form-block" class="button button--main-block main-block__button">
-              <p class="button__text">Получить бесплатную консультацию</p>
-              <p class="button__text button__text--mobile">Бесплатная консультация</p>
+              <p class="button__text" data-mobile = "Бесплатная консультация"> <span> Получить бесплатную консультацию </span> </p>
             </a>
           </div>
         </section>
@@ -149,14 +148,11 @@
         <section class="products">
           <div class="wrapper products__wrapper">
             <a href="#" name="products"></a>
-            <h2 class="products__header">
-              Smart Device предлагает следующие товары и услуги
-            </h2>
-            <h2 class="products__header products__header--mobile">
-              Товары и услуги <br> Smart Device
+            <h2 class="products__header" data-mobile="Товары и услуги Smart Device">
+              <span>Smart Device предлагает следующие товары и услуги</span>
             </h2>
             <ul class="products__list">
-              <li class="products__item product">
+              <li class="products__item product" data-bg-webp="../img/mainblock-desktop.webp">
                 <a href="#" class="product__wrapper">
                   <h3 class="product__name">
                     Производство печатных плат
@@ -168,7 +164,7 @@
                   </div>
                 </a>
               </li>
-              <li class="products__item product">
+              <li class="products__item product" data-bg-webp="../img/mainblock-desktop.webp">
                 <a href="#" class="product__wrapper">
                   <h3 class="product__name">
                     Монтаж печатных плат
@@ -180,7 +176,7 @@
                   </div>
                 </a>
               </li>
-              <li class="products__item product">
+              <li class="products__item product" data-bg-webp="../img/mainblock-desktop.webp">
                 <a href="#" class="product__wrapper">
                   <h3 class="product__name">
                     Комплектующие для светотехники
@@ -195,9 +191,8 @@
             </ul>
           </div>
         </section>
-        <section class="form-block" id="form-block">
+        <section class="form-block" id="form-block" data-bg-webp="../img/form-background.webp">
           <div class="wrapper form-block__wrapper">
-            <a href="#" name="form-block"></a>
             <h2 class="form-block__header">
               Остались вопросы? Задайте их нам!
             </h2>
@@ -206,9 +201,11 @@
             </p>
               <form action="#" class="form-block__form form" method="post">
                 <input class="form__input" type="text" name="name" placeholder="Имя" required>
-                <input class="form__input form__input--phone" type="tel" name="phone" placeholder="Телефон" value="" required>
+                <input class="form__input form__input--phone phone" type="tel" name="phone" placeholder="Телефон" value="" required>
                 <textarea class="form__input form__input--question" placeholder="Ваш вопрос"></textarea>
-                <input type="submit" class="form__button button" value="Задать вопрос">
+                <button class="form__button button">
+                  Задать вопрос
+                </button>
                 <label class="form__checkbox checkbox">
                   <input class="visually-hidden checkbox__input" type="checkbox" name="agreement" required>
                   <span class="checkbox__mark">
@@ -342,7 +339,7 @@
     <div id="call-modal" class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
+        <div class="modal__content modal-form">
           <div class="wrapper modal-form__wrapper">
             <h2 class="modal-form__header">
               Закажите звонок
@@ -352,7 +349,7 @@
             </p>
               <form action="#" class="modal-form__form callform" method="post">
                 <input class="callform__input" type="text" name="name" placeholder="Имя" required>
-                <input class="callform__input  form__input--phone" type="tel" name="phone" placeholder="Телефон" value="" required>
+                <input class="callform__input  phone" type="tel" name="phone" placeholder="Телефон" value="" required>
                 <textarea class="callform__input callform__input--question" placeholder="Ваш вопрос"></textarea>
                 <input type="submit" class="callform__button button" value="Отправить">
                 <label class="callform__checkbox checkbox">
@@ -370,7 +367,7 @@
             </div>
 
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg class="modal__close-btn--pic" width="20" height="20">
+            <svg class="modal__close-btn-pic" width="20" height="20">
               <use xlink:href="img/sprite/sprite.svg#close"></use>
             </svg>
           </button>

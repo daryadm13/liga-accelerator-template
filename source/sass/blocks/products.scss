@@ -62,12 +62,12 @@
       width: 100%;
     }
 
-    &__header {
+    &__header span {
       display: none;
     }
 
-    &__header--mobile {
-      display: block;
+    &__header::after {
+      content: attr(data-mobile);
     }
   }
 }

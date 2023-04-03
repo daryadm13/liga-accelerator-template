@@ -6,14 +6,14 @@ more.addEventListener('click', () => addText());
 less.addEventListener('click', () => closeText());
 
 const addText = () => {
-  more.classList.add('visually-hidden');
-  less.classList.remove('visually-hidden');
-  text.classList.remove('visually-hidden');
+    more.classList.add('visually-hidden');
+    less.classList.remove('visually-hidden');
+    text.classList.remove('visually-hidden');
 };
 
 
 const closeText = () => {
-  more.classList.remove('visually-hidden');
-  less.classList.add('visually-hidden');
-  text.classList.add('visually-hidden');
+    more.classList.remove('visually-hidden');
+    less.classList.add('visually-hidden');
+    text.classList.add('visually-hidden');
 };

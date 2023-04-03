@@ -4,6 +4,7 @@ import './modules/more';
 import './modules/scroll';
 import './modules/form-checker';
 import './modules/footer_list';
+import './modules/webp-background';
 
 // ---------------------------------
 

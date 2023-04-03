@@ -58,19 +58,17 @@
 @include vp-769 {
   .button {
     min-height: 15px;
-
     &__text {
       font-size: 14px;
       line-height: 16px;
     }
 
-    &--main-block .button__text {
+    &--main-block .button__text span {
       display: none;
+    }
 
-      &--mobile {
-        display: block;
-        padding: 0;
-      }
+    &--main-block .button__text::after {
+      content: attr(data-mobile);
     }
   }
 }

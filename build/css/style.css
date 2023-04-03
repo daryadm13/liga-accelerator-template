@@ -1265,6 +1265,7 @@ button,
 .form__button {
   margin-right: 10px;
   background-color: #041827;
+  color: #f2f5f7;
 }
 
 .modal-form__wrapper {
@@ -1817,13 +1818,12 @@ button,
     line-height: 16px;
   }
 
-  .button--main-block .button__text {
+  .button--main-block .button__text span {
     display: none;
   }
 
-  .button--main-block .button__text--mobile {
-    display: block;
-    padding: 0;
+  .button--main-block .button__text::after {
+    content: attr(data-mobile);
   }
 
   .modal__wrapper {
@@ -1884,7 +1884,6 @@ button,
   .main-block__button {
     width: 100%;
     min-width: 260px;
-    padding: 10px 30px;
     margin: 0;
   }
 
@@ -1945,12 +1944,12 @@ button,
     width: 100%;
   }
 
-  .products__header {
+  .products__header span {
     display: none;
   }
 
-  .products__header--mobile {
-    display: block;
+  .products__header::after {
+    content: attr(data-mobile);
   }
 
   .form {
