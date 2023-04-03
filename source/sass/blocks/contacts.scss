@@ -39,8 +39,8 @@
       margin-top: 15px;
     }
 
-    &__header--plus,
-    &__header--minus {
+    &__header-plus,
+    &__header-minus {
       position: absolute;
       right: 26px;
       top: 28px;
@@ -50,7 +50,7 @@
       cursor: pointer;
     }
 
-    &__header--plus {
+    &__header-plus {
       transform: rotate(90deg);
     }
   }

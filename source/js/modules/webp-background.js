@@ -6,6 +6,18 @@ const canUseWebp = () => {
   return false;
 }
 
+const setFormBlockBG = () => {
+  const mediaQuery = window.matchMedia('(max-width: 1023px)');
+  const formBlock = document.querySelector('.form-block');
+  if (!mediaQuery.matches) {
+    formBlock.style.backgroundImage = "url(" + formBlock.getAttribute('data-bg-webp') + ")";
+  }
+  else {
+    formBlock.style.backgroundImage = "none";
+  }
+}
+
+
 window.onload = function () {
   let isitFirefox = window.navigator.userAgent.match(/Firefox\/([0-9]+)\./);
   let firefoxVer = isitFirefox ? parseInt(isitFirefox[1]) : 0;
@@ -17,11 +29,15 @@ window.onload = function () {
     }
     const mainBlock = document.querySelector('.main-block');
     mainBlock.style.backgroundImage = "linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("+ mainBlock.getAttribute('data-bg-webp') +")";
+    setFormBlockBG();
 
-    const mediaQuery = window.matchMedia('(max-width: 1023px)');
-    if (!mediaQuery.matches) {
-      const formBlock = document.querySelector('.form-block');
-      formBlock.style.backgroundImage = "url(" + formBlock.getAttribute('data-bg-webp') + ")";
-    };
   };
 };
+
+window.addEventListener('resize', () => {
+  let isitFirefox = window.navigator.userAgent.match(/Firefox\/([0-9]+)\./);
+  let firefoxVer = isitFirefox ? parseInt(isitFirefox[1]) : 0;
+  if (canUseWebp() || firefoxVer >= 65) {
+    setFormBlockBG();
+  }
+}, true);

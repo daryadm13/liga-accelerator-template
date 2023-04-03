@@ -4,8 +4,8 @@ const contactsList = document.querySelector('.contacts__list');
 const sectionsList = document.querySelector('.sections__list');
 const contactsAddress = document.querySelector('.contacts__address');
 
-const contactsPlus = document.querySelector('.contacts__header--plus');
-const sectionsPlus = document.querySelector('.sections__header--plus');
+const contactsPlus = document.querySelector('.contacts__header-plus');
+const sectionsPlus = document.querySelector('.sections__header-plus');
 
 
 const closeLists = () => {

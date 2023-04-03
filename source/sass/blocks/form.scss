@@ -4,7 +4,7 @@
   column-gap: 30px;
   row-gap: 20px;
 
-  &__input {
+  & input, textarea {
     min-width: 100px;
     background: rgba(4, 20, 39, 0.15);
     border: none;
@@ -26,15 +26,15 @@
     &::-webkit-input-placeholder {
       color: #ffffff;
     }
-
-    &--question {
-      grid-column: 1 / -1;
-      min-height: 155px;
-      margin-bottom: 15px;
-    }
   }
 
-  &__button {
+  & textarea {
+    grid-column: 1 / -1;
+    min-height: 155px;
+    margin-bottom: 15px;
+  }
+
+  & button {
     margin-right: 10px;
     background-color: $color-black;
     color: $color-white;
@@ -43,7 +43,7 @@
 
 @include vp-1023 {
   .form {
-    &__button {
+    & button {
       padding: 15px 25px;
       width: 265px;
     }
