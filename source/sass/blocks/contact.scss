@@ -1,10 +1,13 @@
 .contact {
-  display: flex;
-  min-width: 225px;
-  align-items: center;
-  justify-content: flex-start;
+  &__link{
+    display: flex;
+    min-width: 225px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
   &__text {
+    margin: 0;
     margin-left: 15px;
     font-family: "PT Mono", "Rockwell", serif;
     font-style: normal;
