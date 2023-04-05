@@ -22,7 +22,7 @@
   }
 
 
-  &__header {
+  & h1 {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -34,7 +34,7 @@
     margin: 0;
   }
 
-  &__description {
+  & p {
     width: 685px;
     font-family: "PT Mono", "Rockwell", serif;
     font-style: normal;
@@ -65,13 +65,13 @@
       gap: 0;
     }
 
-    &__header {
+    & h1 {
       font-size: 64px;
       line-height: 75px;
       letter-spacing: 0.07em;
     }
 
-    &__description {
+    & p {
       width: auto;
       margin-bottom: 58px;
     }
@@ -93,13 +93,13 @@
       gap: 10px;
     }
 
-    &__header {
+    & h1 {
       font-size: 36px;
       line-height: 42px;
       letter-spacing: 0.07em;
     }
 
-    &__description {
+    & p {
       font-size: 14px;
       line-height: 155%;
       margin-bottom: 30px;

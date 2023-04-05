@@ -17,18 +17,17 @@
     padding: 0;
   }
 
-  &__header {
+  & h2 {
     margin: 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
-
     color: #ffffff;
   }
 
-  &__description {
+  & p {
     font-family: "PT Mono", "Rockwell", serif;
     font-style: normal;
     font-weight: 400;
@@ -57,7 +56,7 @@
       margin-right: auto;
     }
 
-    &__description {
+    & p {
       margin-top: 10px;
       margin-bottom: 25px;
     }
