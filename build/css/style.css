@@ -992,7 +992,7 @@ button,
   fill: #00b2ff;
 }
 
-.advantage__name {
+.advantage h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1002,7 +1002,7 @@ button,
   margin-bottom: 15px;
 }
 
-.advantage__description {
+.advantage p {
   min-height: 120px;
   font-family: "PT Mono", "Rockwell", serif;
   font-style: normal;
@@ -1016,8 +1016,8 @@ button,
   background-color: #00b2ff;
 }
 
-.advantage:hover .advantage__name,
-.advantage:hover .advantage__description {
+.advantage:hover h3,
+.advantage:hover p {
   color: #f2f5f7;
 }
 
@@ -1119,7 +1119,7 @@ button,
   background-position-y: -56px;
 }
 
-.product__name {
+.product h3 {
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1596,6 +1596,10 @@ button,
     min-width: 0;
   }
 
+  .contact__link {
+    min-width: 0;
+  }
+
   .contact__text {
     display: none;
   }
@@ -1642,14 +1646,14 @@ button,
     padding: 40px 30px 30px 40px;
   }
 
-  .advantage__name {
+  .advantage h3 {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 24px;
     line-height: 34px;
   }
 
-  .advantage__description {
+  .advantage p {
     min-height: 165px;
   }
 
@@ -1686,7 +1690,7 @@ button,
     padding-left: 45px;
   }
 
-  .product__name {
+  .product h3 {
     width: 230px;
   }
 
@@ -1920,14 +1924,14 @@ button,
     height: 30px;
   }
 
-  .advantage__name {
+  .advantage h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 140%;
   }
 
-  .advantage__description {
+  .advantage p {
     min-height: 190px;
     font-size: 14px;
     line-height: 135%;

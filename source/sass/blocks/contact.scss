@@ -23,6 +23,10 @@
   .contact {
     min-width: 0;
 
+    &__link {
+      min-width: 0;
+    }
+
     &__text {
       display: none;
     }
