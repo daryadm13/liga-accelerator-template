@@ -4,7 +4,8 @@
   column-gap: 30px;
   row-gap: 20px;
 
-  & input, textarea {
+  & input,
+  & textarea {
     min-width: 100px;
     background: rgba(4, 20, 39, 0.15);
     border: none;
