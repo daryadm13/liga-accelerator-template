@@ -199,9 +199,12 @@
               Мы проконсультируем Вас бесплатно
             </p>
               <form action="#" class="form-block__form form" method="post">
-                <input class="form__input" type="text" name="name" placeholder="Имя" required>
-                <input class="form__input form__input--phone phone" type="tel" name="phone" placeholder="Телефон" value="" required>
-                <textarea class="form__input form__input--question" placeholder="Ваш вопрос"></textarea>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
+                <label for="name" class="visually-hidden">Имя</label>
+                <input class="form__input form__input--phone phone" type="tel" name="phone" id="phone" placeholder="Телефон" value="" required>
+                <label for="phone" class="visually-hidden">Телефон</label>
+                <textarea class="form__input form__input--question" id="question" placeholder="Ваш вопрос"></textarea>
+                <label for="question" class="visually-hidden">Ваш вопрос</label>
                 <button class="form__button button">
                   Задать вопрос
                 </button>
@@ -347,9 +350,12 @@
               Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
             </p>
               <form action="#" class="modal-form__form callform" method="post">
-                <input class="callform__input" type="text" name="name" placeholder="Имя" required>
-                <input class="callform__input  phone" type="tel" name="phone" placeholder="Телефон" value="" required>
-                <textarea class="callform__input callform__input--question" placeholder="Ваш вопрос"></textarea>
+                <input class="callform__input" type="text" name="name" id="modal-name" placeholder="Имя" required>
+                <label for="modal-name" class="visually-hidden">Имя</label>
+                <input class="callform__input  phone" type="tel" name="phone" id="modal-phone" placeholder="Телефон" value="" required>
+                <label for="modal-phone" class="visually-hidden">Телефон</label>
+                <textarea class="callform__input callform__input--question" id="modal-question" placeholder="Ваш вопрос"></textarea>
+                <label for="modal-question" class="visually-hidden">Ваш вопрос</label>
                 <input type="submit" class="callform__button button" value="Отправить">
                 <span class="callform__checkbox checkbox">
                   <input id="modal-check" class="visually-hidden checkbox__input" type="checkbox" name="agreement" required>
