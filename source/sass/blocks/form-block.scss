@@ -1,6 +1,6 @@
 .form-block {
   background-color: $color-blue;
-  background-image: url("../img/form-background.jpg");
+  background-image: url("img/form-background.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -59,6 +59,20 @@
     & p {
       margin-top: 10px;
       margin-bottom: 25px;
+    }
+  }
+}
+
+@include vp-769 {
+  .form-block {
+    & h2 {
+      font-size: 30px;
+      line-height: 140.62%;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 134.4%;
     }
   }
 }

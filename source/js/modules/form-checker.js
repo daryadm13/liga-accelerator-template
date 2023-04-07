@@ -35,7 +35,7 @@ function mask2(event) {
       event.preventDefault();
     }
   } else {
-    if (event.keyCode !== 8 && event.keyCode !== 46 && event.keyCode !== 37 && event.keyCode !== 39) {
+    if (event.keyCode !== 8 && event.keyCode !== 46 && event.keyCode !== 37 && event.keyCode !== 39 && event.keyCode !== 9 && event.keyCode !== 16) {
       event.preventDefault();
     } else {
       if (s.length <= 1) {
@@ -55,7 +55,7 @@ function mask(event) {
     event.preventDefault();
     phone.value = createNumber(s);
   } else {
-    if (event.keyCode !== 8 && event.keyCode !== 46 && event.keyCode !== 37 && event.keyCode !== 39) {
+    if (event.keyCode !== 8 && event.keyCode !== 46 && event.keyCode !== 37 && event.keyCode !== 39 && event.keyCode !== 9 && event.keyCode !== 16) {
       event.preventDefault();
     } else {
       phone.value = createNumber(s);

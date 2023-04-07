@@ -42,3 +42,12 @@
 .checkbox__input:disabled ~ .checkbox__name {
   opacity: 0.3;
 }
+
+@include vp-769 {
+  .checkbox {
+    &__name {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

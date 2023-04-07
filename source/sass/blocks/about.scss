@@ -69,6 +69,10 @@
       left: 46px;
     }
 
+    & p {
+      margin-bottom: 20px;
+    }
+
     &__button {
       font-size: 14px;
       line-height: 16px;
@@ -82,8 +86,33 @@
 
 @include vp-769 {
   .about {
+    &__wrapper {
+      margin-top: 0;
+    }
+
     & img {
       display: none;
+    }
+
+    & h2 {
+      font-size: 28px;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 134.4%;
+    }
+
+    &__paragraph span {
+      display: none;
+    }
+
+    &__paragraph::after {
+      content: attr(data-mobile);
+    }
+
+    &__button-text {
+      padding: 8px 40px;
     }
   }
 }

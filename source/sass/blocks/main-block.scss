@@ -41,6 +41,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 155%;
+    margin: 0;
   }
 
   &__button {
@@ -80,6 +81,9 @@
       min-height: 55px;
       min-width: 410px;
       margin-left: 45px;
+      letter-spacing: 0.05em;
+      font-size: 18px;
+      line-height: 21px;
     }
   }
 }

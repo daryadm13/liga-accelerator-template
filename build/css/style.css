@@ -713,7 +713,7 @@ button,
   left: 0;
   z-index: 1000;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,16 +757,16 @@ button,
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 100%;
-  padding: 60px 40px;
+  min-height: 100vh;
 }
 
 .modal__overlay {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 820px;
   cursor: pointer;
 }
 
@@ -793,7 +793,7 @@ button,
   cursor: pointer;
 }
 
-.modal__close-btn--pic {
+.modal__close-btn-pic {
   fill: #ffffff;
 }
 
@@ -865,9 +865,16 @@ button,
 }
 
 .header__button {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   background: none;
   border: 1px solid #f2f5f7;
   color: #ffffff;
+}
+
+.header__button a {
+  padding: 10px 15px;
 }
 
 .header__logo--mobile {
@@ -951,6 +958,7 @@ button,
   font-weight: 400;
   font-size: 22px;
   line-height: 155%;
+  margin: 0;
 }
 
 .main-block__button {
@@ -1010,6 +1018,7 @@ button,
   font-size: 16px;
   line-height: 135%;
   color: #041827;
+  margin-bottom: 0;
 }
 
 .advantage:hover {
@@ -1088,9 +1097,9 @@ button,
   height: 650px;
   position: relative;
   background-color: #026593;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("../img/mainblock-desktop.jpg");
-  background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/mainblock-desktop.jpg");
-  background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("../img/mainblock-desktop.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4, 24, 39, 0.5)), to(rgba(4, 24, 39, 0.5))), url("img/mainblock-desktop.jpg");
+  background-image: -o-linear-gradient(bottom, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("img/mainblock-desktop.jpg");
+  background-image: linear-gradient(to top, rgba(4, 24, 39, 0.5), rgba(4, 24, 39, 0.5)), url("img/mainblock-desktop.jpg");
   background-size: 1493px 706px;
 }
 
@@ -1175,17 +1184,17 @@ button,
 }
 
 .products__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 7%;
-  list-style: none;
   padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7%;
 }
 
 .form-block {
   background-color: #00b2ff;
-  background-image: url("../img/form-background.jpg");
+  background-image: url("img/form-background.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -1632,10 +1641,13 @@ button,
     min-height: 55px;
     min-width: 410px;
     margin-left: 45px;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    line-height: 21px;
   }
 
   .advantages {
-    margin: 80px 50px 80px 50px;
+    margin: 80px 50px 70px 50px;
   }
 
   .advantages__list {
@@ -1667,6 +1679,10 @@ button,
 
   .about img {
     left: 46px;
+  }
+
+  .about p {
+    margin-bottom: 20px;
   }
 
   .about__button {
@@ -1725,6 +1741,9 @@ button,
   }
 
   .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1760,6 +1779,10 @@ button,
     width: 265px;
   }
 
+  .form textarea {
+    margin-bottom: 12px;
+  }
+
   .footer {
     padding: 0;
     padding-top: 50px;
@@ -1772,6 +1795,9 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 26px;
+    -moz-column-gap: 26px;
+    column-gap: 26px;
   }
 
   .footer__section--links {
@@ -1779,7 +1805,7 @@ button,
   }
 
   .footer__header {
-    margin-top: 35px;
+    margin-top: 30px;
   }
 
   .sections {
@@ -1911,8 +1937,8 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 45px;
+    margin-bottom: 40px;
   }
 
   .advantage {
@@ -1935,10 +1961,36 @@ button,
     min-height: 190px;
     font-size: 14px;
     line-height: 135%;
+    margin: 0;
+  }
+
+  .about__wrapper {
+    margin-top: 0;
   }
 
   .about img {
     display: none;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+
+  .about__paragraph span {
+    display: none;
+  }
+
+  .about__paragraph::after {
+    content: attr(data-mobile);
+  }
+
+  .about__button-text {
+    padding: 8px 40px;
   }
 
   .product__wrapper {
@@ -1951,6 +2003,15 @@ button,
     height: 40px;
   }
 
+  .product h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .products {
+    padding-top: 40px;
+  }
+
   .products__wrapper {
     width: 100%;
   }
@@ -1961,6 +2022,18 @@ button,
 
   .products__header::after {
     content: attr(data-mobile);
+    font-size: 28px;
+    line-height: 2px;
+  }
+
+  .form-block h2 {
+    font-size: 30px;
+    line-height: 140.62%;
+  }
+
+  .form-block p {
+    font-size: 14px;
+    line-height: 134.4%;
   }
 
   .form {
@@ -1972,6 +2045,15 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .form button {
+    letter-spacing: 0.05em;
+  }
+
+  .checkbox__name {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .footer {
@@ -2007,6 +2089,11 @@ button,
     margin-top: 15px;
   }
 
+  .sections__link {
+    font-size: 14px;
+    line-height: 135%;
+  }
+
   .sections__header-plus,
   .sections__header-minus {
     position: absolute;
@@ -2034,6 +2121,13 @@ button,
 
   .contacts__address {
     margin-top: 15px;
+    font-size: 14px;
+    line-height: 135%;
+  }
+
+  .contacts__number {
+    font-size: 14px;
+    line-height: 135%;
   }
 
   .contacts__header-plus,

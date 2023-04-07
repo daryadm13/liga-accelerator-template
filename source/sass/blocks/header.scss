@@ -14,7 +14,6 @@
     align-items: center;
   }
 
-
   &__contacts {
     margin: 0;
     padding: 0;
@@ -24,9 +23,16 @@
   }
 
   &__button {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
     background: none;
     border: 1px solid $color-white;
     color: #ffffff;
+
+    & a {
+      padding: 10px 15px;
+    }
   }
 
   &__logo--mobile {
